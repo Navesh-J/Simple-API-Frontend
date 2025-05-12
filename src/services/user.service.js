@@ -11,7 +11,7 @@ export const retrieveUser = async(userId)=>{
     const getUserEndpoint = `${import.meta.env.VITE_API_URL}/v1/user/${userId}`;
     const {data:apiResponse} = await axios.get(getUserEndpoint);
     return apiResponse;
-}
+    }   
 
 export const retrieveAllUsers = async()=>{
     const getAllUsersEndpoint = `${import.meta.env.VITE_API_URL}/v1/user/all`;
